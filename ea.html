@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projet ea</title>
+    <!-- MathJax for LaTeX rendering -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)'], ['$', '$']],
+                displayMath: [['\\[', '\\]'], ['$$', '$$']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
     <style>
-     
-
 :root {
     --primary: #1565c0;
     --primary-light: #e3f2fd;
@@ -442,7 +450,10 @@ hr {
     .simulation-container iframe {
         height: 380px;
     }
-    .logo {
+}
+
+/* Logo (hors du @media pour être toujours appliqué) */
+.logo {
     text-align: center;
     margin-bottom: 24px;
 }
@@ -451,14 +462,11 @@ hr {
     max-width: 150px;
     height: auto;
     display: inline-block;
-    background: transparent; /* pas de couleur, même fond que la page */
+    background: transparent;
 }
-
-   
-
-</style>
-
+    </style>
 </head>
+
   <div class="logo">
         <img src="ensi logo.jpg" alt="Logo de l'ENSI" style="display: block; margin: 0 auto; max-width: 150px; ba">
     </div>"
@@ -961,7 +969,7 @@ hr {
     <iframe src="https://tinyurl.com/2cwkovyb" allowfullscreen></iframe>
 </div>
 <span class="caption">Simulation interactive du circuit de commande LED - Vous pouvez modifier les paramètres des composants</span>
-rxc-kdzb-iso
+
     <h4>3.2.1 Montage (a) - Inverseur (NOT)</h4>
 
     <!-- IMAGE 14 : Schéma inverseur -->
